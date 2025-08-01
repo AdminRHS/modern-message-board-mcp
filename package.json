@@ -1,0 +1,31 @@
+{
+  "name": "modern-message-board-mcp",
+  "version": "1.0.0",
+  "description": "Simple MCP Service for Modern Message Board - Create and Update Messages",
+  "main": "modern-message-board-mcp.js",
+  "bin": {
+    "modern-message-board-mcp": "./modern-message-board-mcp.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "esbuild index.js --bundle --platform=node --outfile=modern-message-board-mcp.js --format=esm --external:node:*",
+    "start": "node index.js"
+  },
+  "files": [
+    "modern-message-board-mcp.js"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.1",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.8"
+  },
+  "keywords": [
+    "mcp",
+    "message-board",
+    "replit"
+  ],
+  "author": "RH Development Team",
+  "license": "MIT"
+}
