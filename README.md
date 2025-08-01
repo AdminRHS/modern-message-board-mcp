@@ -2,6 +2,41 @@
 
 Simple MCP service for accessing and managing messages on a modern message board application.
 
+## MCP Configuration
+
+Add to your MCP client configuration:
+
+```json
+{
+  "mcpServers": {
+    "modern-message-board-mcp": {
+      "command": "npx",
+      "args": ["github:AdminRHS/modern-message-board-mcp"]
+    }
+  }
+}
+```
+
+### Local Installation
+
+Alternative method - global package installation:
+
+```bash
+npm install -g github:AdminRHS/modern-message-board-mcp
+```
+
+Then configure mcp.json like this:
+
+```json
+{
+  "mcpServers": {
+    "modern-message-board-mcp": {
+      "command": "modern-message-board-mcp"
+    }
+  }
+}
+```
+
 ## GitHub Repository
 
 Project is available on GitHub: [AdminRHS/modern-message-board-mcp](https://github.com/AdminRHS/modern-message-board-mcp)
@@ -40,41 +75,6 @@ git push origin main
    ```bash
    npm start
    ```
-
-## MCP Configuration
-
-Add to your MCP client configuration:
-
-```json
-{
-  "mcpServers": {
-    "modern-message-board-mcp": {
-      "command": "npx",
-      "args": ["github:AdminRHS/modern-message-board-mcp"]
-    }
-  }
-}
-```
-
-### Local Installation
-
-Alternative method - global package installation:
-
-```bash
-npm install -g github:AdminRHS/modern-message-board-mcp
-```
-
-Then configure mcp.json like this:
-
-```json
-{
-  "mcpServers": {
-    "modern-message-board-mcp": {
-      "command": "modern-message-board-mcp"
-    }
-  }
-}
-```
 
 ## Available Tools
 
